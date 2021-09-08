@@ -10,16 +10,24 @@
     "changed": "0.0.2",
     "concat": "^1.0.3",
     "cssnano": "^5.0.8",
+    "csso": "^4.2.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
     "gulp-express": "^0.3.5",
     "gulp-imagemin": "^8.0.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-requirejs": "^1.4.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
-    "html-min": "0.0.4"
+    "html-min": "0.0.4",
+    "image-min": "^0.3.2",
+    "run": "^1.4.0",
+    "run-sequence": "^2.2.1",
+    "sequence": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
