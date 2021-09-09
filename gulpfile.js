@@ -17,7 +17,7 @@ jsMin = (cb)=>{
 cssMin = (cb)=>{
     gulp.src("./src/styles/*.styles")
         .pipe(cleanCss())
-        .pipe(gulp.dest("./dist/styles/"));
+        .pipe(gulp.dest('./dist/styles/'  ));
     cb();
 }
 
@@ -31,7 +31,7 @@ htmlMin = (cb)=>{
 sassCom = (cb) => {
     gulp.src('./src/sass/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./dist/styles/'));
+        .pipe(gulp.dest( './dist/styles' + './src/styles'));
     cb();
 }
 

@@ -1,7 +1,45 @@
-@import "base/variables";
-@import "base/mixin";
-@import "base/reset";
-@import "typography/fonts";
+//Mixins
+@mixin transitionEffect($par){
+  transition: $par all;
+  -webkit-transition: $par all;
+  -moz-transition: $par all;
+  -ms-transition: $par all;
+  -o-transition: $par all;
+}
+@mixin centerFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin transformTranslate($x){
+  transform: translate($x);
+  -webkit-transform: translate($x);
+  -moz-transform: translate($x);
+  -ms-transform: translate($x);
+  -o-transform: translate($x);
+}
+@mixin transformTranslate($y){
+  transform: translate($y);
+  -webkit-transform: translate($y);
+  -moz-transform: translate($y);
+  -ms-transform: translate($y);
+  -o-transform: translate($y);
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+//color
+$bg-color-1 : #fff;
+$left-bg-color: rgba(87, 84, 236, 0.7);
+$right-bg-color: rgba(43, 43, 43, 0.8);
+$left-btn-hover-color: rgba(87, 84, 236, 1);
+$right-btn-hover-color: rgba(28, 122, 28, 1);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -63,7 +101,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('../img/ps.jpg');
+  background-image: url("src/img/ps.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,7 +116,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('../img/xbox.jpg');
+  background-image: url("src/img/xbox.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
